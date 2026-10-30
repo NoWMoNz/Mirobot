@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>MiRobot Math Controller</title>
+  <meta name="description" content="Smart Math Calculator & Robotic Writing Controller for WLKata MiRobot">
+  <meta name="theme-color" content="#0284c7">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              200: '#bae6fd',
+              300: '#7dd3fc',
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+              800: '#075985',
+              900: '#0c4a6e',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- React 18 & ReactDOM -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased select-none">
+  <div id="root">
+    <!-- Initial Loading State -->
+    <div class="min-h-screen flex flex-col items-center justify-center p-6 text-center">
+      <div class="w-12 h-12 rounded-2xl bg-sky-500 animate-pulse flex items-center justify-center text-white text-xl font-bold mb-4 shadow-lg">
+        M
+      </div>
+      <h2 class="text-lg font-bold text-slate-800">Loading MiRobot Math...</h2>
+      <p class="text-xs text-slate-500 mt-1">Initializing calculator and kinematics engine</p>
+    </div>
+  </div>
+
+  <!-- Unified Self-Contained Application Bundle (Runs seamlessly on file:// and http://) -->
+  <script src="bundle.js"></script>
+</body>
+</html>
